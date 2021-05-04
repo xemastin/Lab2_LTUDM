@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function Show(idOfElement) {
+            var TeachersGroup = document.getElementsByClassName("TeachersGroup")
+            Array.from(TeachersGroup).forEach(element => {
+                element.classList.remove("show")
+            })
+            var Groups = document.getElementsByClassName("Group")
+            Array.from(Groups).forEach(element => {
+                element.classList.remove("active")
+            })
+            document.getElementById(idOfElement).classList.add("active")
+            document.getElementById("Teachers" + idOfElement).classList.add("show")
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+    <div class="navbar">
+        <div class="nav-content">
+            <img src="https://tuyensinh.uit.edu.vn/sites/default/files/banner_2021.png"
+                alt="Thông tin tuyển sinh Đại học" role="presentation">
+            <div class="SearchContainer-Sign">
+                <div class="Sign">
+                    <img src="user.svg" alt="" srcset="">
+                    <a href="#">Đăng nhập</a>
+                </div>
+                <div class="SearchContainer">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Search">
+                        <button type="submit"><img
+                                src="https://tuyensinh.uit.edu.vn/sites/all/themes/open_framework/images/searchbutton.png"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="Links">
+        <a href="#">Nhà</a>
+        <span>&rarr;</span>
+        <a href="#">Giới thiệu</a>
+    </div>
+    <div class="Main-Content">
+
+        <h1 id="SchoolName">Trường Đại học Công nghệ thông tin</h1>
+        <div id="SchoolInfo">
+            <p>Khu phố 6, P.Linh Trung, Q. Thủ Đức, Tp. Hồ Chí Minh</p>
+            <p>ĐT: (08)37252002</p>
+            <p>Website: <a href="http://www.uit.edu.vn">www.uit.edu.vn</a></p>
+        </div>
+        <img alt="" src="https://tuyensinh.uit.edu.vn/sites/default/files/uploads/files/dai-hoc-uit-3.jpg"
+            style="width: 800px; height: 294px;padding: 50px 130px;">
+        <p class="IntroduceContent">Trường Đại học Công nghệ Thông tin (ĐH CNTT), ĐHQG-HCM là trường đại học công lập
+            chuyên ngành CNTT được thành lập theo Quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ
+            trên cơ sở Trung tâm Phát triển Công nghệ Thông tin. Trường khai giảng năm học đầu tiên vào tháng 10/2006.
+        </p>
+        <p class="IntroduceContent">Trường ĐH CNTT là một trung tâm đào tạo đại học, sau đại học, cung cấp nguồn nhân
+            lực, đội ngũ chuyên gia trình độ cao trong lĩnh vực Công nghệ thông tin và Truyền thông (CNTT&TT), có năng
+            lực phát triển tự thân ngành CNTT&TT và năng lực triển khai ứng dụng CNTT&TT trong các ngành công nghệ cao,
+            quản lý, kinh tế - tài chính, có năng lực sáng tạo, làm việc trong môi trường quốc tế. Trường ĐH CNTT thực
+            hiện nghiên cứu khoa học và chuyển giao công nghệ CNTT&TT và các công nghệ liên quan, triển khai các ứng
+            dụng CNTT&TT trong các lĩnh vực công nghệ cao, quản lý kinh tế, tài chính theo nhu cầu phát triển kinh tế
+            của đất nước và phù hợp với xu thế phát triển của khu vực Đông Nam Á và thế giới.</p>
+        <p class="IntroduceContent">Trường ĐH CNTT hướng đến trở thành một trường đại học trọng điểm về CNTT&TT của Việt
+            Nam về nghiên cứu và ứng dụng CNTT của cả nước và khu vực Đông Nam Á.</p>
+        <p class="IntroduceContent">Các chương trình đào tạo của Trường ĐH CNTT được chia thành ba cấp độ: đại học, cao
+            học và tiến sĩ với những mục tiêu đào tạo khác nhau.</p>
+
+        <blockquote class="sidekick"><a href="">Thông tin xét tuyển Đại học Công nghệ Thông tin năm 2018</a>
+        </blockquote>
+
+        <p>Các thông tin khác:</p>
+        <p><span style="font-weight: bolder;">1. Chương trình Cử nhân tài năng</span> ngành Khoa học máy tính và chương
+            trình <span style="font-weight: bolder;">Kỹ sư tài năng</span> An toàn Thông tin
+            tuyển mỗi chương trình 40 thí sinh đã trúng tuyển vào Trường theo thứ tự ưu tiên sau:
+        </p>
+        <p>- Thí sinh thuộc diện tuyển thẳng.</p>
+        <p>- Thí sinh đạt giải trong kỳ thi chọn học sinh giỏi quốc gia THPT.</p>
+        <p>- Thí sinh đạt kết quả cao trong kỳ thi tuyển sinh đại học.</p>
+        <p><span style="font-weight: bolder;">2. Chương trình Tiên tiến:</span> tuyển 40 sinh viên cho ngành Hệ thống
+            thông tin theo quy trình và chương trình của Đại học Oklahoma State University, Hoa kỳ.
+        </p>
+        <p>- Điều kiện xét tuyển: thí sinh trúng tuyển vào Trường Đại học Công nghệ Thông tin năm 2018; có điểm TOEFL >=
+            450 hoặc tương đương. Nếu chưa đạt chuẩn đầu vào sinh viên sẽ tham gia học tăng cường Tiếng Anh song song
+            chương trình đào tạo.</p>
+        <p>- Học phí: 35 – 45 triệu/năm.</p>
+        <p><span style="font-weight: bolder;">4. Chương trình Chất lượng cao với học phí tương ứng:</span> tuyển sinh
+            vào
+            các ngành Hệ thống Thông tin, Kỹ thuật Máy tính, Kỹ thuật Phần mềm, Khoa học máy Tính, An Toàn Thông tin,
+            Mạng máy tính và Truyền thông Dữ liệu, Công nghệ Thông tin ( Chất lượng cao định hướng Nhật Bản).
+        </p>
+        <h2 id="TeacherTeamHeader" style="color: #88191d;">ĐỘI NGŨ GIẢNG VIÊN</h2>
+        <div class="GroupsAndTeachers">
+            <div class="Groups">
+                <div id=Group1 class="Group" onclick="Show(this.id)">
+                    <p class="GroupName">Khoa học Máy tính</p>
+                </div>
+                <div id=Group2 class="Group active" onclick="Show(this.id)">
+                    <p class="GroupName">Kỹ thuật Máy tính</p>
+                </div>
+                <div id=Group3 class="Group" onclick="Show(this.id)">
+                    <p class="GroupName">Kỹ thuật Phần mềm</p>
+                </div>
+                <div id=Group4 class="Group" onclick="Show(this.id)">
+                    <p class="GroupName">Hệ thống thông tin &amp; Thương mại điện tử</p>
+                </div>
+                <div id=Group5 class="Group" onclick="Show(this.id)">
+                    <p class="GroupName">MTT&amp;TT và An toàn Thông tin</p>
+                </div>
+                <div id=Group6 class="Group" onclick="Show(this.id)">
+                    <p class="GroupName">KH&amp;KTTT</p>
+                </div>
+                <div id=Group7 class="Group" onclick="Show(this.id)">
+                    <p class="GroupName">Bộ môn</p>
+                </div>
+                <div id=Group8 class="Group" onclick="Show(this.id)">
+                    <p class="GroupName">PTN truyền thông đa phương tiện</p>
+                </div>
+            </div>
+            <div class="Teachers">
+                <div id="TeachersGroup1" class="TeachersGroup hide ">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc Hàn Quốc Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher3" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher4" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher5" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher6" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher7" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher8" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="TeachersGroup2" class="TeachersGroup hide show">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher3" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher4" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher5" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher6" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="TeachersGroup3" class="TeachersGroup hide ">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher3" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher4" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="TeachersGroup4" class="TeachersGroup hide ">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher3" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher4" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher5" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher6" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher7" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher8" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="TeachersGroup5" class="TeachersGroup hide ">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher3" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher4" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher5" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher6" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="TeachersGroup6" class="TeachersGroup hide ">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="TeachersGroup7" class="TeachersGroup hide ">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher3" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher4" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher5" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="TeachersGroup8" class="TeachersGroup hide ">
+                    <div id="Teacher1" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+                    <div id="Teacher2" class="Teacher">
+                        <img src="Profile_avatar_placeholder_large.png" alt="Avatar">
+                        <div class="TeacherInfo">
+                            <p class="TeacherName">TS. Nguyễn Minh Sơn</p>
+                            <p class="TeacherSchool">Đại học UlSan, Hàn Quốc</p>
+                            <div class="ShortBorder"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="FooterSchoolName">
+            <p id="Name">&copy; 2016 - Trang tuyển sinh - Trường Đại học Công nghệ Thông tin</p>
+            <p>Khu phố 6, P.Linh Trung, Q.Thủ Đức, Tp.Hồ Chí Minh</p>
+        </div>
+        <div class="Contact">
+            <p style="font-weight: bolder; margin: 10px 0;"><img src="incoming-call.svg" width="13px" height="13px">
+                090.883.1246</p>
+            <a style="text-decoration: none; color:#08c;"><img src="email.svg" width="13px" height="13px">
+                tuyensinh@uit.edu.vn</a>
+        </div>
+        <div class="SocialMedia">
+            <img src="https://seeklogo.com/images/F/facebook-icon-circle-logo-09F32F61FF-seeklogo.com.png" width="32px"
+                height="32px">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/youtube_circle-512.png"
+                width="32px" height="32px">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                width="32px" height="32px">
+        </div>
+    </div>
+    <div class="ContactRight">
+        <a href="tel:+123456789" style="top: 0px;"><img src="incoming-call.svg" width="30px" height="30px"
+                style="margin: 5px"><span style="font-size: 20px;">090.883.1246</span></a>
+        <a href="https://m.me/TuyenSinh.UIT" style="top: 41px;"><img
+                src="iconfinder_messenger_message_fb_facebook_5340263.svg" width="30px" height="30px"
+                style="margin: 5px;"><span style="font-size: 20px;">Chat FB</span></a>
+        <a href="https://www.facebook.com/TuyenSinh.UIT/" style="top: 82px;"><img
+                src="iconfinder_facebook_social_media_network_3463465.svg" width="40px" height="40px"
+                style="margin: 0.5px;"><span style="font-size: 20px;">Fanpage</span></a>
+        <a href="mailto:tuyensinh@uit.edu.vn" style="top: 123px;"><img src="email.svg" width="30px" height="30px"
+                style="margin: 5px;"> Email</a>
+    </div>
+</body>
+
+</html>

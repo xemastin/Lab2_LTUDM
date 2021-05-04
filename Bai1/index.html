@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function Show(x) {
+            var More = x.parentElement.getElementsByTagName("p")[1].style;
+            if (More.display == 'inline') {
+                More.display = 'none';
+                x.parentElement.getElementsByClassName("action")[0].innerText = "View more >"
+            }
+            else {
+                More.display = 'inline';
+                x.parentElement.getElementsByClassName("action")[0].innerText = "View less >"
+            }
+        }
+    </script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 45%;
+            float: left;
+            padding: 0% 2.5%;
+        }
+
+        .container img {
+            width: 100%;
+            filter: brightness(80%);
+        }
+
+        #more {
+            display: none;
+        }
+
+        .action {
+            color: red;
+        }
+
+        .text {
+            position: relative;
+            background-color: white;
+            margin: 0% 10%;
+            margin-top: -100px;
+            box-shadow: 2px 4px 5px gray;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div class="container">
+            <img src="./building.jpeg" alt="">
+            <div class="text">
+                <h1>Overview</h1>
+                <p>We are a leading automation company that provide solutions and engineering for customers in the
+                    fields of
+                    industrial and commercial markets in applications of Process and Industrial Automation, Commercial &
+                    Residential Solutions.</p>
+                <p id="more">We are uniquely frontier to bring products and software to support and improve more
+                    efficientworld. Our solutions enhance the quality of life of people based on company's philosophy
+                    "Automation for People".</p>
+                <p class="action" onclick="Show(this)">View less ></p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="./mission.jpg" alt="">
+            <div class="text">
+                <h1>Mission & Values</h1>
+                <p>We corporate mission and values are expressed in the company's promise to our customers and
+                    employees:
+                    Our mission is to create long-term values for our customers and employees through through a
+                    passionate
+                    commitment to excellence, together drive sustained competitive advantage in a ddynamic market. We
+                    achieve our cussess by providing industry-leading solutions and delivering best results and
+                    satisfaction
+                    for customers.
+
+                </p>
+                <p id="more">Our values are alwawys to provide for customers the best solutions and products. We
+                    constantly strive to
+                    be trusted prartners with our customers and to be more connected more forward-looking, and more
+                    customer-focused on creating the benefits at customer's sites.</p>
+                <p class="action" onclick="Show(this)">View less ></p>
+            </div>
+        </div>
+    
+
+</body>
+
+</html>

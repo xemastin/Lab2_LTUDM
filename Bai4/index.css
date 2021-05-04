@@ -1,0 +1,219 @@
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  width: 100%;
+  height: 130px;
+  border-bottom: 2px solid black;
+}
+.nav-content {
+  width: 70%;
+  margin-left: 15%;
+}
+.nav-content img,
+.SearchContainer-Sign {
+  float: left;
+}
+.SearchContainer input {
+  width: calc(100%-16px);
+  height: 26px;
+  float: left;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.SearchContainer button {
+  position: relative;
+  left: -40px;
+  border: none;
+  background-color: transparent;
+}
+.Sign {
+  padding-top: 20px;
+  width: 100%;
+  height: 50px;
+}
+.Sign img {
+  height: 27px;
+  width: 27px;
+  border-radius: 5px;
+}
+
+.Sign a {
+  color: #08c;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: -1px;
+}
+
+.Main-Content {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  margin-left: 15%;
+  background-color: white;
+  height: 100%;
+  padding: 1%;
+}
+
+.Links {
+  margin-left: 15%;
+  padding-left: 20px;
+  height: 25px;
+  padding-top: 5px;
+  background-color: whitesmoke;
+}
+.Links a {
+  color: #08c;
+  text-decoration: none;
+}
+#SchoolName {
+  color: #b94a48;
+  font-size: 24px;
+  margin: 20px 10px;
+}
+#SchoolInfo {
+  width: 100%;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 15px;
+}
+#SchoolInfo a,
+.sidekick a {
+  text-decoration: none;
+}
+
+.IntroduceContent {
+  padding: 0 10px;
+}
+
+.sidekick {
+  padding: 5px 20px;
+  border-left: 0.3em solid gray;
+}
+
+.sidekick a {
+  color: #08c;
+}
+
+.GroupsAndTeachers {
+  position: relative;
+  padding: 2px;
+  height: 650px;
+  width: 100%;
+}
+.Groups {
+  float: left;
+  width: 25%;
+  background-color: white;
+}
+.Group {
+  height: auto;
+  border: 1px solid #08c;
+  padding: 0 19px;
+}
+
+.Teachers {
+  border: 1px solid #08c;
+  border-left: none;
+  height: auto;
+  padding: 4px 0;
+  float: left;
+  width: 74%;
+  background-color: #f0f8fc;
+}
+
+.Teacher {
+  margin: 0.5% 1%;
+  height: 150px;
+  width: 48%;
+  background-color: yellow;
+  float: left;
+}
+.Teacher img {
+  width: 35%;
+  height: 100%;
+}
+.TeacherInfo {
+  float: right;
+  height: auto;
+  width: 65%;
+  text-align: center;
+}
+.ShortBorder {
+  width: 2.5cm;
+  height: 1px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.active {
+  background-color: #f0f8fc;
+  color: green;
+  font-weight: bolder;
+  border-right: none;
+}
+.footer {
+    
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+  width: 72%;
+  margin: 0 15%;
+  border-top: 2px solid black;
+  background-color: white;
+}
+.FooterSchoolName p {
+  margin: 0;
+  margin-left: 5px;
+}
+#Name {
+  font-weight: bolder;
+}
+.FooterSchoolName {
+  float: left;
+  margin: 10px 0;
+  width: 55%;
+}
+
+.Contact {
+  float: left;
+  width: 20%;
+}
+.SocialMedia {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.ContactRight{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    
+}
+
+.ContactRight a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    transition: 400ms all linear;
+    height: 40px;
+    background-color: #0088cc;
+    width: 160px;
+    right: -120px;
+}
+
+.ContactRight a:hover{
+    right: 0;
+}

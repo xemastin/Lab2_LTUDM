@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main-nav {
+            height: 50px;
+            width: 100%;
+            background-color: #3193c0;
+        }
+
+        #main-menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .items {
+            height: 35px;
+            float: left;
+            width: 100px;
+            padding-top: 15px;
+            text-align: center;
+            list-style-type: none;
+            border-style: solid;
+            border-width: 0px 1px 0px 0px;
+            border-color: white;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            width: 150px;
+            padding: 0px;
+            margin-top: 15px;
+            box-shadow: 1px 1px 10px grey;
+            border-radius: 0% 0% 2% 2%;
+        }
+
+        .have-sub-menu:hover .sub-menu {
+            display: block;
+        }
+
+        .sub {
+            border: none;
+            width: 100%;
+            height: 40px;
+            text-align: left;
+        }
+
+        .sub a {
+            padding-top: 15px;
+            padding-left: 10px;
+            color: #3193c0;
+        }
+
+        .sub:hover {
+            background-color: #006994;
+        }
+
+        .sub:hover a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <!-- Sample menu definition -->
+        <ul id="main-menu">
+            <li class="items"><a href="https://uit.edu.vn">Home</a></li>
+            <li class="items"><a href="https://uit.edu.vn">About</a></li>
+            <li class="items"><a href="https://uit.edu.vn">Download</a></li>
+            <li class="items"><a href="https://uit.edu.vn">Support</a></li>
+            <li class="items"><a href="https://uit.edu.vn">Docs</a></li>
+            <li class="items have-sub-menu"><a href="#">Sub test</a>
+                <ul class="sub-menu">
+                    <li class="items sub"><a href="#">Dummy items</a></li>
+                    <li class="items sub"><a href="#">Dummy items</a></li>
+                    <li class="items sub"><a href="#" class="disabled">Disabled menu items</a></li>
+                    <li class="items sub"><a href="#">Dummy items</a></li>
+                    <li class="items sub"><a href="#">more...</a>
+                </ul>
+            </li>
+            <li class="items">
+                <a href="#">Mega menu</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
